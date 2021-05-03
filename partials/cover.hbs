@@ -1,20 +1,21 @@
 <div class="cover{{#if @site.cover_image}} image-loading{{/if}}">
-        {{#if @site.cover_image}}
-        <img class="gh-mast-img"
-            srcset="{{img_url @site.cover_image size="s"}} 300w,
-                    {{img_url @site.cover_image size="m"}} 600w,
-                    {{img_url @site.cover_image size="l"}} 1000w,
-                    {{img_url @site.cover_image size="xl"}} 2000w"
-            sizes="(min-width: 585px) 585px"
-            src="{{img_url @site.cover_image size="l"}}"
-            alt="{{@site.title}}"
-            loading="lazy"
-        />
-        {{/if}}
+
 
     <div class="cover-content container">
 
         {{#if @site.description}}
             <div class="cover-description">Post Secret</div>
         {{/if}}
+        
+        <img srcset="{{img_url https://postsecret.ghost.io/content/images/2021/05/Screenshot-2021-05-02-at-18.02.12-6.png size="s"}} 300w,
+                    {{img_url https://postsecret.ghost.io/content/images/2021/05/Screenshot-2021-05-02-at-18.02.12-6.png size="m"}} 600w,
+                    {{img_url https://postsecret.ghost.io/content/images/2021/05/Screenshot-2021-05-02-at-18.02.12-6.pngsize="l"}} 1000w,
+                    {{img_url https://postsecret.ghost.io/content/images/2021/05/Screenshot-2021-05-02-at-18.02.12-6.png size="xl"}} 2000w"
+            sizes="(min-width: 585px) 585px"
+            src="{{img_url https://postsecret.ghost.io/content/images/2021/05/Screenshot-2021-05-02-at-18.02.12-6.png size="l"}}"
+            alt="{{@site.title}}"
+            loading="lazy"
+        />
+        {{/if}}
+        
 </div>
