@@ -15,11 +15,11 @@
         <div class="post-feed expanded container medium">
             {{^unless @member}}
                 {{#foreach posts}}
-                    {{> "loop"}}
+                    {{> content }}
                 {{/foreach}}
             {{else}}
                 {{#foreach posts}}
-                    {{> "loop"}}
+                    {{> content }}
                 {{/foreach}}
             {{/unless}}
         </div>
