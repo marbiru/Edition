@@ -15,10 +15,12 @@
         <div class="post-feed expanded container medium">
             {{^unless @member}}
                 {{#foreach posts}}
+                    {{title}}
                     {{> content }}
                 {{/foreach}}
             {{else}}
                 {{#foreach posts}}
+                    {{title}}
                     {{> content }}
                 {{/foreach}}
             {{/unless}}
