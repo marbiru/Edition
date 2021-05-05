@@ -13,15 +13,12 @@
         </header>
 
         <div class="post-feed expanded container medium">
-            {{^unless @member}}
                 {{#foreach posts}}
+                    {{#link href=(url) class="post-link" activeClass="active"}}
+                        {{title}}
+                    {{/link}}
                     {{> content }}
                 {{/foreach}}
-            {{else}}
-                {{#foreach posts}}
-                    {{> content }}
-                {{/foreach}}
-            {{/unless}}
         </div>
 
         {{pagination}}
