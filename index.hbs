@@ -14,9 +14,6 @@
 
         <div class="post-feed expanded container medium">
                  {{#foreach posts}} 
-                  {{#link href=(url) class="post-link" activeClass="active"}}
-                    {{date}}
-                  {{/link}}
                         {{> content }}
                 {{/foreach}}
         </div>
