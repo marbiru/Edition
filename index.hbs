@@ -13,7 +13,10 @@
         </header>
 
         <div class="post-feed expanded container medium">
-                {{#foreach posts}}
+                 {{#foreach posts}} 
+                  {{#link href=(url) class="post-link" activeClass="active"}}
+                    {{title}}
+                  {{/link}}
                         {{> content }}
                 {{/foreach}}
         </div>
