@@ -21,11 +21,7 @@
         {{/is}}
 
         <h1 class="single-title">
-            {{#if titleLink}}
-                {{#link other_attributes href=titleLink}}{{title}}{{/link}}
-            {{else}}
-                {{title}}
-            {{/if}}
+            {{#link href=(url)}}{{title}}{{/link}}
         </h1>
 
         {{#if custom_excerpt}}
